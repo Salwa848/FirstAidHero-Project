@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- عنوان الحالة الطارئة -->
+    <TextView
+        android:id="@+id/textDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:paddingBottom="8dp"/>
+
+    <!-- مستوى الخطورة -->
+    <TextView
+        android:id="@+id/textDetailDanger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="#FF8F00"
+        android:paddingBottom="12dp"/>
+
+    <!-- الأعراض -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="الأعراض والعلامات:"
+        android:textStyle="bold"
+        android:textColor="#333333"/>
+    
+    <TextView
+        android:id="@+id/textDetailSymptoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:paddingBottom="12dp"/>
+
+    <!-- خطوات الإسعاف بالتفصيل -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="خطوات الإسعافات الأولية:"
+        android:textStyle="bold"
+        android:textColor="#333333"/>
+
+    <ListView
+        android:id="@+id/listViewSteps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
